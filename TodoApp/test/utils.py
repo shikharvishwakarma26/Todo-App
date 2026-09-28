@@ -1,12 +1,12 @@
 from sqlalchemy import create_engine, text
 from sqlalchemy.pool import StaticPool
 from sqlalchemy.orm import sessionmaker
-from TodoApp.database import Base
-from TodoApp.main import app
+from database import Base
+from main import app
 from fastapi.testclient import TestClient
 import pytest
-from TodoApp.models import Todos, Users
-from TodoApp.routers.auth import bcrypt_context
+from models import Todos, Users
+from routers.auth import bcrypt_context
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///./testdb.db"
 
