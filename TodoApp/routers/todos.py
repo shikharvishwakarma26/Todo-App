@@ -102,8 +102,8 @@ from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 from fastapi import APIRouter, Depends, HTTPException, Path, Request, status
 from starlette import status
-from TodoApp.models import Todos
-from TodoApp.database import SessionLocal
+from models import Todos
+from database import SessionLocal
 from .auth import get_current_user
 from starlette.responses import RedirectResponse
 from fastapi.templating import Jinja2Templates
