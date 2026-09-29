@@ -1,9 +1,9 @@
 from fastapi import FastAPI, Request, status
-from models import Base
-from routers import auth, todos, admin, users
+from TodoApp.models import Base
+from TodoApp.routers import auth, todos, admin, users
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import RedirectResponse
-from database import engine
+from TodoApp.database import engine
 
 app = FastAPI()
 
