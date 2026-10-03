@@ -1,6 +1,7 @@
 import streamlit as st 
 import requests
-BASE_URL='http://127.0.0.1:8000'
+import os
+BASE_URL=os.environ.get("BaCKEND_URL",'http://127.0.0.1:8000') 
 
 
 # 1. Initialize session storage to persist the JWT token across user actions
