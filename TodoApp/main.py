@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .models import Base
+from TodoApp.models import Base
 from TodoApp.routers import auth, todos, admin, users
 
 
