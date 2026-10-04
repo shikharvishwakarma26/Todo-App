@@ -8,15 +8,9 @@ import os
 # Fallback to your live FastAPI Render URL
 BASE_URL=os.environ.get("BaCKEND_URL",'https://todo-app-e1ar.onrender.com/') 
 
-st.title("My FastAPI + Streamlit App")
+st.title("Todo-App")
 
-if st.button("Fetch Data from Backend"):
-    # Call your live FastAPI endpoint
-    response = requests.get(f"{BASE_URL}/docs")
-    if response.status_code == 200:
-        st.write(response.json())
-    else:
-        st.error("Failed to connect to backend")
+ 
 
 
 # 1. Initialize session storage to persist the JWT token across user actions
