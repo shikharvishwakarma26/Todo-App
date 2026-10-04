@@ -6,7 +6,7 @@ import os
 
 
 # Fallback to your live FastAPI Render URL
-BASE_URL=os.environ.get("BaCKEND_URL",'https://todo-app-e1ar.onrender.com/') 
+BASE_URL=os.environ.get("BaCKEND_URL",'https://todo-app-e1ar.onrender.com') 
 
 st.title("Todo-App")
 
